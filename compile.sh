@@ -8,3 +8,6 @@ nasm -g -f elf64 -l main.lst main.asm
 ld -o main main.o
 nasm -g -f elf64 -l test.lst test.asm
 ld -o test test.o
+
+g++ main.cpp -Wall -g -o main_cpp
+g++ gen.cpp -Wall -g -o gen 
